@@ -1,0 +1,23 @@
+{
+  "name": "webgl-female",
+  "version": "1.0.0",
+  "description": "## Specification",
+  "main": "Detector.js",
+  "dependencies": {
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magdalenabialon/webgl-3d-model-viewer-using-three.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magdalenabialon/webgl-3d-model-viewer-using-three.js/issues"
+  },
+  "homepage": "https://github.com/magdalenabialon/webgl-3d-model-viewer-using-three.js#readme"
+}

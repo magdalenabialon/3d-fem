@@ -12,7 +12,7 @@ webGL, threejs, javascript, jQuery, HTML, CSS, 3d Modelling, texturing _________
 
  press [L] to toggle three-point lighting
 
- # model of a female forked from:
+ ## model of a female forked from:
  https://github.com/magdalenabialon/webgl-3d-model-viewer-using-three.js
  * OBJ loader for loading a geometry format that is as old and widely supported as GIFs.
  * MTL loader for loading really simple materials.

@@ -15,6 +15,8 @@
 
     var female;
 
+    var heightFem, widthFront, widthSide;
+
 
 
     //different textures / outfits
@@ -137,10 +139,20 @@
 
               object.position.y += 0.00;
 
-              var heightFem = object.scale.y;
-              var widthFront = object.scale.z;
-              var widthSide = object.scale.x;
 
+              // CHANGE SIZE / scale
+
+                var inputOne = document.getElementsByTagName('input')[0];
+                var inputTwo = document.getElementsByTagName('input')[1];
+                var sizeBtn = document.getElementById('changeSizeBtn');
+
+
+                sizeBtn.addEventListener('click', function() {
+                  object.scale.y = Number(inputOne.value);
+                  object.scale.z = Number(inputTwo.value);
+                  object.scale.x = Number(inputTwo.value);
+                  // console.log(heightFem);
+                });
 
 
               female = object;
@@ -296,15 +308,15 @@
 
 
 
-// CHANGE SIZE / scale
-
-  var inputOne = document.getElementsByTagName('input')[0];
-  var inputTwo = document.getElementsByTagName('input')[1];
-
-  var sizeBtn = document.getElementById('changeSizeBtn');
-
-  sizeBtn.addEventListener('click', function(object) {
-    object.scale.x = Number(inputOne.value)
-    object.scale.y = Number(inputTwo.value)
-    object.scale.z = Number(inputTwo.value);
-  });
+// // CHANGE SIZE / scale
+//
+//   var inputOne = document.getElementsByTagName('input')[0];
+//   var inputTwo = document.getElementsByTagName('input')[1];
+//
+//   var sizeBtn = document.getElementById('changeSizeBtn');
+//
+//   sizeBtn.addEventListener('click', function(object) {
+//     object.scale.x = Number(inputOne.value)
+//     object.scale.y = Number(inputTwo.value)
+//     object.scale.z = Number(inputTwo.value);
+//   });

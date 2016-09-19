@@ -140,6 +140,7 @@
               object.position.y += 0.00;
 
 
+
               // CHANGE SIZE / scale
 
                 var inputOne = document.getElementsByTagName('input')[0];
@@ -148,9 +149,19 @@
 
 
                 sizeBtn.addEventListener('click', function() {
-                  object.scale.y = Number(inputOne.value);
-                  object.scale.z = Number(inputTwo.value);
-                  object.scale.x = Number(inputTwo.value);
+                  // if (inputOne === null && inputTwo === null){
+                  //   object.scale.y = 1;
+                  //   object.scale.z = 1;
+                  //   object.scale.x = 1;
+                  // } else if (inputOne === null || inputTwo === null) {
+                  //   object.scale.y = 1;
+                  //   object.scale.z = 1;
+                  //   object.scale.x = 1;
+                  // }
+
+                  object.scale.y = Number(inputOne.value)/160;
+                  object.scale.z = Number(inputTwo.value)/8;
+                  object.scale.x = Number(inputTwo.value)/8;
                   // console.log(heightFem);
                 });
 

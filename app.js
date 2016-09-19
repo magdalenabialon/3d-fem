@@ -19,8 +19,10 @@
 
     //different textures
     var texture1 = 'female-croupier-2013-03-26.mtl';
-    var texture2 = 'fem-texture.mtl';
-    var texture3 = 'fem-texture2.mtl';
+    var texture2 = 'fem-texture2.mtl';
+    var texture3 = 'fem-texture3.mtl';
+    var texture4 = 'fem-texture4.mtl';
+    var texture5 = 'fem-texture5.mtl';
 
 
 
@@ -276,13 +278,18 @@
       var clickedTexture = event.target.src;
       // console.log('its ' + clickedTexture);
 
-      if (event.target.src === 'http://127.0.0.1:8080/assets/t3.png') {
+      if (event.target.src === 'http://127.0.0.1:8080/assets/icons/icon3.png') {
         clickedTexture = texture3;
-      } else if (event.target.src === 'http://127.0.0.1:8080/assets/t2.png') {
+      } else if (event.target.src === 'http://127.0.0.1:8080/assets/icons/icon2.png') {
         clickedTexture = texture2;
-      } else if (event.target.src === 'http://127.0.0.1:8080/assets/fem-t.png') {
+      } else if (event.target.src === 'http://127.0.0.1:8080/assets/icons/fem-t.png') {
         clickedTexture = texture1;
+      } else if (event.target.src === 'http://127.0.0.1:8080/assets/icons/icon4.png') {
+        clickedTexture = texture4;
+      } else if (event.target.src === 'http://127.0.0.1:8080/assets/icons/icon5.png') {
+        clickedTexture = texture5;
       }
+
       //if else to set up and back
 
       mtlLoader.setBaseUrl('assets/');
